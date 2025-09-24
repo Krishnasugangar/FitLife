@@ -25,7 +25,7 @@ const ProtectedRoute = ({ children }) => {
 
 const App = () => (
   <AuthProvider>
-    <Router>
+    <Router basename="/FitLife"> {/* Replace with your actual repo or subpath */}
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -60,6 +60,7 @@ const App = () => (
               </ProtectedRoute>
             }
           />
+          {/* Wildcard redirect */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Layout>
