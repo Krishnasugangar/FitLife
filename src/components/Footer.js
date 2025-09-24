@@ -13,7 +13,7 @@ const amenities = {
     { label: '1+(555)-555-5555' }
   ],
   socialIcons: [
-    { icon: <FaInstagram />, href: '#' },
+    { icon: <FaInstagram />, href: 'https://www.instagram.com/krishna_sugangar/' },
     { icon: <FaYoutube />, href: '#' },
     { icon: <FaFacebookF />, href: '#' }
   ]
@@ -47,7 +47,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="footer-col sitetitle">
-          <div className="footer-title">KLIPSAN</div>
+          <div className="footer-title">FitLife</div>
           <div className="footer-icons">
             {amenities.socialIcons.map(({ icon, href }, idx) => (
               <a key={idx} href={href} style={{ color: 'inherit' }}>

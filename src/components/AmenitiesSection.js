@@ -21,7 +21,7 @@ const AmenitiesSection = () => (
   <section className="amenities-section">
     <h2 className="amenities-title">AMENITIES</h2>
     <p className="amenities-description">
-      At Klipsan Fitness, we’re always expanding our amenities to meet the needs of our community. Something you’d like to see added to our list? Submit a request.
+      At FitLife Fitness, we’re always expanding our amenities to meet the needs of our community. Something you’d like to see added to our list? Submit a request.
     </p>
     <div className="amenities-lists">
       <ul>
