@@ -6,7 +6,7 @@ const BoxingClassFeature = () => (
     <div className="boxing-info">
       <h2 className="class-title">BOXING</h2>
       <p className="instructor">
-        TAUGHT BY <a href="#">AARON HUGHES</a> AND <a href="#">TESHIA MILLER</a>
+        TAUGHT BY AARON HUGHES AND TESHIA MILLER
       </p>
       <p className="timing">TUESDAY:  2PM-3PM</p>
       <p className="timing">THURSDAY:  2PM-3PM</p>

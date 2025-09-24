@@ -12,8 +12,8 @@ const ClassFeature = () => (
     <div className="feature-info">
       <h2>CARDIO</h2>
       <p>
-        <span className="feature-instructor-label">TAUGHT BY </span>
-        <a href="#">ALIYAH WILLIAMS</a>
+        <span className="feature-instructor-label">TAUGHT BY ALIYAH WILLIAMS</span>
+        
       </p>
       <button className="book-class-btn">BOOK A CLASS</button>
     </div>

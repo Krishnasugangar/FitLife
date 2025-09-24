@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../context/AuthContext';
 
 const PaymentPage = () => {
-  const { currentUser, subscribePlan } = useContext(AuthContext);
+  const {currentUser,  subscribePlan } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const planTitle = location.state?.planTitle;

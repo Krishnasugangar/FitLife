@@ -15,6 +15,7 @@ import Register from './components/Register';
 import UserDashboard from './components/UserDashboard';
 import AdminPanel from './components/AdminPanel';
 
+// ProtectedRoute component to restrict access to logged-in users
 const ProtectedRoute = ({ children }) => {
   const { currentUser } = React.useContext(AuthContext);
   if (!currentUser) {
@@ -25,7 +26,7 @@ const ProtectedRoute = ({ children }) => {
 
 const App = () => (
   <AuthProvider>
-    <Router basename="/FitLife"> {/* Replace with your actual repo or subpath */}
+    <Router basename="/"> {/* Set basename to empty string or "/" for root deployment */}
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -36,6 +37,8 @@ const App = () => (
           <Route path="/join" element={<JoinGymPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+
+          {/* Routes protected by authentication */}
           <Route
             path="/payment"
             element={
@@ -60,7 +63,8 @@ const App = () => (
               </ProtectedRoute>
             }
           />
-          {/* Wildcard redirect */}
+
+          {/* Redirect any unknown path to home page */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Layout>
