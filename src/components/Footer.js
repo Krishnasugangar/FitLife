@@ -9,8 +9,8 @@ const amenities = {
     { label: 'FAQs', href: '#' }
   ],
   contact: [
-    { label: 'email@example.com' },
-    { label: '1+(555)-555-5555' }
+    { label: 'krishnasugangar7@gmail.com' },
+    { label: '91+ 9353970266' }
   ],
   socialIcons: [
     { icon: <FaInstagram />, href: 'https://www.instagram.com/krishna_sugangar/' },
