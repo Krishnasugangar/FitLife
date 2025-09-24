@@ -1,0 +1,58 @@
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 40px 32px;
+  justify-items: center;
+}
+
+.instructor-card {
+  position: relative;
+  width: 320px;
+  height: 440px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 44px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.30);
+  padding: 0 12px;
+}
+
+.overlay h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 2.8rem;
+  margin: 0 0 8px 0;
+  letter-spacing: 1.5px;
+}
+
+.overlay p {
+  font-size: 1rem;
+  margin: 0;
+  letter-spacing: 1.2px;
+}
+
+@media (max-width: 900px) {
+  .instructors-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 20px;
+  }
+  .instructor-card {
+    height: 320px;
+    width: 100%;
+  }
+  .overlay h2 {
+    font-size: 2rem;
+  }
+}

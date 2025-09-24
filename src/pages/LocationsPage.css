@@ -1,0 +1,57 @@
+.locations-page {
+  padding: 24px 40px;
+}
+
+.location-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  gap: 48px;
+}
+
+.location-left {
+  flex: 1;
+}
+
+.location-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 24px;
+  color: #111;
+  letter-spacing: 2px;
+}
+
+.contact-title {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 58px 0 16px 0;
+  color: #111;
+  letter-spacing: 2px;
+}
+
+.location-map {
+  flex: 1.2;
+}
+
+.location-map img {
+  width: 100%;
+  max-width: 580px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(44,44,44,0.09);
+}
+
+@media (max-width: 900px) {
+  .location-section {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .location-map img {
+    max-width: 98vw;
+    height: 260px;
+  }
+}

@@ -1,0 +1,51 @@
+.classes-split-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 64px 60px 48px 60px;
+  min-height: 38vh;
+  gap: 40px;
+  background: #fff;
+}
+
+.split-left {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+.split-left h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.split-right {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.split-right p {
+  font-size: 1.18rem;
+  color: #111;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 900px) {
+  .classes-split-section {
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 24px;
+  }
+  .split-left h2 {
+    font-size: 2rem;
+  }
+  .split-right p {
+    font-size: 1rem;
+  }
+}

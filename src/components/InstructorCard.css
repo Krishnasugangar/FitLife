@@ -1,0 +1,49 @@
+.instructor-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.instructor-overlay {
+  width: 100%;
+  z-index: 2;
+  background: rgba(0,0,0,0.25); /* Slight overlay for readability */
+  text-align: center;
+  padding-bottom: 44px;
+}
+
+.instructor-name {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin: 0 0 10px 0;
+  letter-spacing: 1.5px;
+}
+
+.instructor-classes {
+  font-size: 1.12rem;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .instructor-card {
+    height: 280px;
+  }
+  .instructor-name {
+    font-size: 1.2rem;
+  }
+  .instructor-classes {
+    font-size: 0.97rem;
+  }
+}

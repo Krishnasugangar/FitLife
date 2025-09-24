@@ -1,0 +1,30 @@
+.images-section {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.side-img {
+  width: 33vw;
+  max-width: 440px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.4);
+}
+
+/* Responsive stacking for mobile */
+@media (max-width: 900px) {
+  .images-section {
+    flex-direction: column;
+    gap: 24px;
+    min-height: 65vh;
+  }
+  .side-img {
+    width: 80vw;
+    max-width: 95vw;
+  }
+}
