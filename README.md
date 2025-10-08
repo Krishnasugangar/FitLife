@@ -2,7 +2,7 @@
 
 FitLife is a responsive React-based fitness website project with multiple pages, user authentication, class plans, and payment integration. It is designed to provide users the ability to explore fitness classes, instructors, locations, and join fitness plans with payment.
 
---
+-
 
 ## Features
 
